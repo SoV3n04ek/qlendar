@@ -1,0 +1,39 @@
+# General
+.DS_Store
+*.user
+*.suo
+*.userprefs
+*.log
+*.ncrunchsolution
+*.ncrunchproject
+
+# Build outputs
+/bin/
+/obj/
+/qlendar-backend/QlendarBackend/bin/
+/qlendar-backend/QlendarBackend/obj/
+
+# Debug/Release
+[Dd]ebug/
+[Rr]elease/
+*.pdb
+*.exe
+*.dll
+
+# Environment files
+.env
+*.env.local
+*.env.development
+*.env.production
+
+# IDE specific
+.vs/
+.idea/
+.vscode/
+
+# Docker
+docker-compose.override.yml
+
+# Frontend (if applicable)
+/qlendar-frontend/node_modules/
+/qlendar-frontend/dist/
