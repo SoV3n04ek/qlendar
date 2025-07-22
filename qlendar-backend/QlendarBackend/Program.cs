@@ -5,6 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 using QlendarBackend.Qlendar.API;
 using QlendarBackend.Qlendar.Infrastructure;
 using QlendarBackend.Qlendar.Models;
+using QlendarBackend.Qlendar.Services;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -45,6 +46,7 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<INoteService, NoteService>();
 
 var app = builder.Build();
 
